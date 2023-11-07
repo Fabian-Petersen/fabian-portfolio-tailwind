@@ -6,8 +6,8 @@ const ProjectsPage = () => {
   return (
     <div className="section">
       <SocialsAnimation />
-      <ProjectMainContent />
       <PageLinkIcons />
+      <ProjectMainContent />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import CTAButton from "./CTAButton";
 
 const HomeMainContent = ({ animateLine }) => {
   return (
-    <article className="col-start-2 col-end-3 px-8 my-auto">
+    <article className="col-start-2 col-end-3 px-8 my-auto bg-transparent">
       <motion.div
         className="text-primaryColor w-20 h-4 border-b-4 mb-4 border-primaryColor"
         variants={animateLine}
