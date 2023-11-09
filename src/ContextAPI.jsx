@@ -10,7 +10,7 @@ const AppProvider = ({ children }) => {
   const [activeButton, setActiveButton] = useState("ALL");
   const [openSidebar, setOpenSidebar] = useState(false);
   const [toggleTheme, setToggleTheme] = useState(true);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("");
   const [visible, setVisible] = useState(false);
 
   return (

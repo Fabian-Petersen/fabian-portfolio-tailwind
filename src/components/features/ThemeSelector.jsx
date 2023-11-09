@@ -42,14 +42,14 @@ const ThemeSelector = () => {
         <Tooltip content="light theme" placement="left">
           <FontAwesomeIcon
             icon={faSun}
-            className="text-white"
+            className="dark:text-white text-fontLightTheme"
             onClick={handleClick}
           />
         </Tooltip>
       ) : (
         <Tooltip content="dark theme" placement="left">
           <FontAwesomeIcon
-            className="text-fontLightTheme"
+            className="dark:text-white text-fontLightTheme"
             icon={faMoon}
             onClick={handleClick}
           />

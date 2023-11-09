@@ -1,14 +1,16 @@
 import ContactMainContent from "../components/contact/ContactMainContent";
-import PageLinkIcons from "../components/features/PageLinkIcons";
-import SocialsLinkIcons from "../components/features/SocialsLinkIcons";
+import AboutBGImage from "../assets/images/background-images/aboutBGImage";
+// import PageLinkIcons from "../components/features/PageLinkIcons";
+// import SocialsLinkIcons from "../components/features/SocialsLinkIcons";
 
 const ContactPage = () => {
   return (
-    <div className="relative section">
-      <SocialsLinkIcons />
+    <section className="section">
+      <AboutBGImage />
+      {/* <SocialsLinkIcons /> */}
       <ContactMainContent />
-      <PageLinkIcons />
-    </div>
+      {/* <PageLinkIcons /> */}
+    </section>
   );
 };
 

@@ -1,12 +1,14 @@
 const motivate = {
   initialState: {
     opacity: 0,
+    scale: 0,
     y: "105vh",
   },
 
   animateState: {
     opacity: 1,
     y: 0,
+    scale: 1,
     transition: {
       duration: 2,
       delay: 0.5,

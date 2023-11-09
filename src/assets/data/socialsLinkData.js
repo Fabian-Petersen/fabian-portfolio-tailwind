@@ -1,5 +1,5 @@
 import brandIcons from "../icons/brandIcons";
-const { facebook, twitter, linkedin, github } = brandIcons;
+const { facebook, linkedin, github, twitter } = brandIcons;
 
 const socialLinks = [
   {

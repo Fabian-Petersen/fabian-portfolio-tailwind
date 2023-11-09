@@ -4,7 +4,7 @@ import AnimatedBackground from "../components/home/AnimatedBackground";
 
 const Home = () => {
   return (
-    <section className="relative section homePageHeight">
+    <section className="section homePageHeight overflow-y-auto">
       <AnimatedBackground />
       <HomeMainContent />
       <Motivation />

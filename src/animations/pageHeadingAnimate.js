@@ -31,6 +31,8 @@ const childContainerHeading = {
   },
 };
 
+// Amimation for the projects page secondary heading "My Latest Completed Projects"
+
 const ContainerHeadingTwo = {
   initialState: {
     scale: 0,
@@ -42,7 +44,7 @@ const ContainerHeadingTwo = {
     opacity: 1,
 
     transition: {
-      duration: 0.8,
+      duration: 100,
     },
   },
 };

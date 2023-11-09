@@ -6,17 +6,18 @@ import {
   faSass,
   faReact,
   faJs,
-  faFacebook,
-  faTwitter,
-  faLinkedin,
-  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
+// npm install react-icons --save
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import { GrLinkedinOption } from "react-icons/gr";
+import { PiGithubLogoFill } from "react-icons/pi";
+
 const brandIcons = {
-  facebook: faFacebook,
-  twitter: faTwitter,
-  linkedin: faLinkedin,
-  github: faGithub,
+  facebook: FaFacebookF,
+  twitter: FaTwitter,
+  linkedin: GrLinkedinOption,
+  github: PiGithubLogoFill,
   html: faHtml5,
   bootstrap: faBootstrap,
   css3: faCss3,

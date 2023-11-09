@@ -33,7 +33,7 @@ const AnimatedBackground = () => {
 
   return (
     <div
-      className="absolute top-0 left-0 bg-cover h-full w-full z-[-1]"
+      className="absolute top-0 left-0 h-full w-full z-[-1]"
       id="animated-bg"
     ></div>
   );
