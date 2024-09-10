@@ -9,7 +9,7 @@ const PageLinkIcons = () => {
   const [parentContainer, childContainer] = iconPageLinksVariants;
   return (
     <motion.ul
-      className="fixed flex flex-col gap-[2rem] opacity-0 z-50 top-[50%] right-[3%] transform -translate-y-[50%]"
+      className="sm:fixed sm:flex sm:flex-col hidden md:visible gap-[2rem] z-50 top-[50%] right-[3%] transform -translate-y-[50%]"
       variants={parentContainer}
       initial="initialState"
       animate="animateState"

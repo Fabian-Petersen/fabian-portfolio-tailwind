@@ -1,27 +1,27 @@
 import { motion } from "framer-motion";
-import bgSVGVariants from "../../../animations/backgoundSVGAnimate";
+import aboutVariants from "../../../animations/aboutAnimate";
 
 const AboutBGImage = () => {
-  const [parentContainer, childContainer] = bgSVGVariants;
+  const [parentContainer, childContainer] = aboutVariants;
   return (
-    <div className="h-screen w-full absolute z-[-1]">
+    <div className="h-full w-full">
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         xlinkHref="http://www.w3.org/1999/xlink"
         data-svgjs="http://svgjs.dev/svgjs"
-        width="1440"
-        height="760"
-        preserveAspectRatio="none"
-        viewBox="0 0 1440 760"
+        width="100%"
+        height="100%"
+        preserveAspectRatio="xMidYMid slice"
+        viewBox="0 0 2280 1520"
         variants={parentContainer}
         initial="initialState"
         animate="animateState"
       >
         <g mask='url("#SvgjsMask1017")' fill="none">
           <rect
-            width="1440"
-            height="760"
+            width="100%"
+            height="100%"
             x="0"
             y="0"
             fill="rgba(5, 15, 26, 1)"
@@ -59,7 +59,7 @@ const AboutBGImage = () => {
         </g>
         <defs>
           <mask id="SvgjsMask1017">
-            <rect width="1440" height="760" fill="#ffffff"></rect>
+            <rect width="100%" height="100%" fill="#ffffff"></rect>
           </mask>
         </defs>
       </motion.svg>

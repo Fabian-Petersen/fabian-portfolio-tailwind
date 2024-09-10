@@ -12,6 +12,14 @@ const AppProvider = ({ children }) => {
   const [toggleTheme, setToggleTheme] = useState(true);
   const [theme, setTheme] = useState("");
   const [visible, setVisible] = useState(false);
+  //$ Store all the inserted information in the create new booking variable.
+  const [contactData, setContactData] = useState({
+    name: "Fabian",
+    surname: "Petersen",
+    contact: "071 348 5647",
+    agency: "ABC Web Developement Agency",
+    message: "Testing the message form",
+  });
 
   return (
     <AppContext.Provider
@@ -31,6 +39,8 @@ const AppProvider = ({ children }) => {
         setButtonCategory,
         visible,
         setVisible,
+        contactData,
+        setContactData,
       }}
     >
       {children}

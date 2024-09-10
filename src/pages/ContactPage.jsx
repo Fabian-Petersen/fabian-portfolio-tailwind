@@ -5,11 +5,9 @@ import AboutBGImage from "../assets/images/background-images/aboutBGImage";
 
 const ContactPage = () => {
   return (
-    <section className="section">
+    <section className="relative grid grid-cols-[10%_80%_10%] h-[var(--sectionHeight)] mt-[var(--navbarHeight)] col-start-2 bg-bgLight dark:bg-bgDark dark:text-white overflow-y-auto border-2 border-red-500">
       <AboutBGImage />
-      {/* <SocialsLinkIcons /> */}
       <ContactMainContent />
-      {/* <PageLinkIcons /> */}
     </section>
   );
 };

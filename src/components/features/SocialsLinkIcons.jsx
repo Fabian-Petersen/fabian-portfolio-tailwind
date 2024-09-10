@@ -12,7 +12,7 @@ const SocialsLinkIcons = () => {
       variants={parentContainer}
       initial="initialState"
       animate="animateState"
-      className="col-start-1 col-end-2 fixed flex flex-col gap-[2rem] z-50 top-[50%] left-[3%] transform -translate-y-[50%]"
+      className="sm:col-start-1 sm:col-end-2 fixed flex md:flex-col gap-[1rem] md:gap-[2rem] z-[50] top-[75%] left-[5%] md:top-[50%] md:left-[3%] transform -translate-y-[50%]"
     >
       {socialLinks.map((link) => {
         const { id, icon: IconComponent, href, tooltip, iconColor } = link;
@@ -21,15 +21,15 @@ const SocialsLinkIcons = () => {
           <Tooltip
             key={id}
             content={tooltip}
-            placement="right"
+            placement="top"
             className={iconColor}
           >
             <Link to={href}>
               <motion.li
                 variants={childContainer}
-                className={`pageLinkIcons ${iconColor} border-none`}
+                className={`pageLinkIcons ${iconColor} border-transparent dark:border-transparent hover:border-[1.5px] hover:border-yellow-400`}
               >
-                <IconComponent className="text-white iconSize" />
+                <IconComponent className="text-white iconSize`" />
               </motion.li>
             </Link>
           </Tooltip>

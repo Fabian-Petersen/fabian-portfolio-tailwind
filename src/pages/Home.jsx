@@ -1,14 +1,15 @@
 import HomeMainContent from "../components/home/HomeMainContent";
 import Motivation from "../components/features/Motivation";
-import AnimatedBackground from "../components/home/AnimatedBackground";
+import HomeBG from "../assets/images/BGImages_Rect_Light/HomeBG";
 
 const Home = () => {
   return (
-    <section className="section homePageHeight overflow-y-auto">
-      <AnimatedBackground />
+    // <section className="relative section homePageHeight overflow-y-auto">
+    <main className="grid md:grid-cols-[10%_80%_10%] w-screen h-screen">
+      <HomeBG />
       <HomeMainContent />
       <Motivation />
-    </section>
+    </main>
   );
 };
 

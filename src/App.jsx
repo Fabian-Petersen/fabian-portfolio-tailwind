@@ -11,6 +11,9 @@ import AppProvider from "./ContextAPI";
 import SocialsLinkIcons from "./components/features/SocialsLinkIcons";
 import PageLinkIcons from "./components/features/PageLinkIcons";
 
+// $ Provide a Layout Componet to wrap around the Routes for consistant styling accross all pages.
+// import Layout from "./components/Layout";
+
 const App = () => {
   return (
     <AppProvider>

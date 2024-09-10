@@ -37,20 +37,20 @@ const ThemeSelector = () => {
   };
 
   return (
-    <div className="ml-auto w-[1rem] h-[1rem] md:w-[1.3rem] md:h-[1.3rem] text-[1.2rem] flex items-center justify-center rounded-full outline-2 outline-white hover:cursor-pointer">
+    <div className="w-[1rem] h-[1rem] md:w-[1.3rem] md:h-[1.3rem] text-[1.2rem] flex items-center justify-center rounded-full outline-2 outline-white hover:cursor-pointer">
       {toggleTheme ? (
-        <Tooltip content="light theme" placement="left">
+        <Tooltip content="Dark Theme" placement="left">
           <FontAwesomeIcon
-            icon={faSun}
             className="dark:text-white text-fontLightTheme"
+            icon={faMoon}
             onClick={handleClick}
           />
         </Tooltip>
       ) : (
-        <Tooltip content="dark theme" placement="left">
+        <Tooltip content="Light Theme" placement="left">
           <FontAwesomeIcon
+            icon={faSun}
             className="dark:text-white text-fontLightTheme"
-            icon={faMoon}
             onClick={handleClick}
           />
         </Tooltip>

@@ -6,11 +6,8 @@ const BurgerMenuButton = () => {
   const { openSidebar, setOpenSidebar } = useGlobalContext();
   return (
     <button
-      className={
-        openSidebar
-          ? "show-sidebar mx-[1rem] dark:text-white"
-          : "hide-sidebar mx-[1rem]"
-      }
+      className={`dark:text-white sm:hidden
+        ${openSidebar ? "show-sidebar mx-[1rem] " : "hide-sidebar mx-[1rem]"}`}
       id="nav-btn"
       onClick={() => setOpenSidebar(!openSidebar)}
     >
